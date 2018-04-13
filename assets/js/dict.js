@@ -1,17 +1,18 @@
-$(function() {
-
-    var t = {
-      "Select_Lenguage": {
-        pt: "Selecionou Portugues",
-        en: "Select English"
+class Dicionario {
+  static returnT() {
+    return {
+      "lbl_ptbr": {
+        pt: "Português",
+        en: "Portuguese"
+      },
+      "lbl_en":{
+        pt: "Inglês",
+        en: "English"
+      },
+      "text_job":{
+        pt :"Analista <span>Desenvolvedor</span>",
+        en :"Analyst <span>developer</span>"
       }
-    };
-    var _t = $('body').translate({lang: "pt", t: t});
-    var str = _t.g("translate");
-  
-    $(".lang_selector").click(function(ev) {
-      var lang = $(this).attr("data-value");
-      _t.lang(lang);
-      ev.preventDefault();
-    });
-  });
+    }
+  }
+}

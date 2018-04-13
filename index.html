@@ -10,6 +10,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
 <title>Meu perfil profissional | Home </title>
 <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/select.css" rel="stylesheet" type="text/css" media="all" />
 <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
 <link href="assets/css/animate.css" rel="stylesheet">
@@ -24,17 +25,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!---End-smoth-scrolling---->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.inview.min.js"></script>
-<script src="assets/js/jquery.translate.js"/>
-<script type="text/javascript" src="assets/js/script.js"></script>
-<script type="text/javascript" src="assets/js/dict.js"></script>
+<script src="assets/js/jquery.translate.js"> </script>
+<script src="assets/js/dict.js"></script>
+<script src="assets/js/script.js"></script>
  </head>
 <body>
 		<div id="undefined-sticky-wrapper" class="sticky-wrapper">
-			<p>
-      	<a class="btn btn-default lang_selector trn" href="#" role="button" data-value="en" data-trn-key="translate to English">traduzir para Inglês</a>
-        <a class="btn btn-default lang_selector trn" href="#" role="button" data-value="pt" data-trn-key="translate to Portuguese">traduzir para Português</a>
-			</p>
-			<span class="trn">Select_Lenguage</span>
 			<header class="header" >
 				<nav class="navbar navbar-custom" role="navigation">
 					<div class="container">
@@ -53,7 +49,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<li class=""><a href="#about">Sobre</a></li>
 								<li class=""><a href="#skill">Conhecimentos</a></li>
 								<li class=""><a href="#professional-section">Resumo</a></li>
-								<!--<li><a href="#contact">Contact</a></li>-->
+								<li>
+										<div class="select">
+												<ul class="list-unstyled">
+														<li class="init">Português</li>
+														<li data-value="pt" class="li-click trn">lbl_ptbr</li>
+														<li data-value="en" class="li-click trn">lbl_en</li>
+												</ul>
+											</div>
+								</li>
 							</ul>
 						</div>
 					</div><!-- .container -->
@@ -65,7 +69,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="header-section">
 				<div class="container">
 					<h5>André Durazzo</h5>
-					<h1>Analista <span>Desenvolvedor</span></h1>
+					<h1 class="trn">text_job</h1>
 					<br>
 					<p>Analista de sistemas e desenvolvedor full-stack.</p>
 					<p>Possuo grande experiencia na integração entre plataformas.</p>
@@ -182,8 +186,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<span class="label label-success">Spring Data</span>
 							<span class="label label-info">Oracle</span>
 							<div id="skills" class="collapse">
-								<span class="label label-info">C++</span>
-								<span class="label label-primary">C#</span>								
+								<span class="label label-primary">C#</span>
 								<span class="label label-default">Groovy</span>
 								<span class="label label-info">Postgress</span>
 								<span class="label label-default">PaaS</span>
@@ -191,7 +194,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<span class="label label-info">Docker</span>
 								<span class="label label-primary">Git</span>
 								<span class="label label-info">Jenkins</span>
-								<span class="label label-default">Openshift</span>
 								<span class="label label-default">Html</span>
 								<span class="label label-success">Angular Js</span>
 								<span class="label label-success">Angular 2/4/5</span>
