@@ -10,10 +10,13 @@ $(document).ready(function ($) {
             $(this).unbind('inview');
         }
     });
-
-    $(".scroll").click(function (event) {
-        event.preventDefault();
-        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+   
+    $('a[href*=#]').bind("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 1000);
+        e.preventDefault();
     });
 
     $(".select ul").on("click", ".init", function() {
